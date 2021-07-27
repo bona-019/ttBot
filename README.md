@@ -6,4 +6,4 @@ Com o navegador Firefox o projeto faz uso do Geckodriver, utilizado para abrir s
 
 # Arquivos do projeto
 
-Além do main.py o projeto conta com o arquivo palavras.txt, que contém uma lista de palavras do dicionário da língua portuguesa, ou seja, o bot comenta palavras aleatórias do dicionário. Também possui o arquivo username.txt, que contém informações de login de contas do Twitter.
+Além do main.py o projeto conta com o arquivo palavras.txt, que contém uma lista de palavras do dicionário da língua portuguesa, ou seja, o bot posta palavras aleatórias do dicionário. Também possui o arquivo username.txt, que contém informações de login de contas do Twitter.
