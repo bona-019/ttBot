@@ -3,14 +3,14 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 import random
 
-f = open(r"C:\Users\Bona\Documents\Python Projects\twitterbot\username.txt", 'r', encoding='utf8')
+f = open(r".\username.txt", 'r', encoding='utf8')
 pw = f.readlines()
 
 class ttBot:
     def __init__(self, username, password):
         self.username = username
         self.password = password
-        self.driver = webdriver.Firefox(executable_path=r"C:\Users\Bona\Desktop\geckodriver-v0.29.0-win64\geckodriver.exe")
+        self.driver = webdriver.Firefox(executable_path=r".\geckodriver.exe")
         self.driver.maximize_window()
         self.driver.get('https://twitter.com/login')
         sleep(3)
@@ -26,7 +26,7 @@ class ttBot:
 
     def post(self):
         driver = self.driver
-        f = open(r"C:\Users\Bona\Documents\Python Projects\twitterbot\palavras.txt", 'r', encoding="utf8")
+        f = open(r".\palavras.txt", 'r', encoding="utf8")
         words = f.readlines()
         driver.find_element_by_xpath('/html/body/div/div/div/div[2]/header/div/div/div/div[1]/div[3]/a/div/span/div/div/span/span')
         sleep(2)
